@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td colspan="4">
+                <input id="result" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="getremove()" class="topbtn">c</button></td> 
+            <td><button onclick="getresult('*')" class="topbtn">x</button></td>
+            <td><button onclick="getresult('/')"class="topbtn">÷</button></td>
+            <td><button onclick="getresult('.')" class="topbtn">.</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getresult('7')">7</button></td>
+            <td><button onclick="getresult('8')">8</button></td>
+            <td><button onclick="getresult('9')">9</button></td>
+            <td><button onclick="getresult('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getresult('4')">4</button></td>
+            <td><button onclick="getresult('5')">5</button></td>
+            <td><button onclick="getresult('6')">6</button></td>
+            <td><button onclick="getresult('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getresult('1')">1</button></td>
+            <td><button onclick="getresult('2')">2</button></td>
+            <td><button onclick="getresult('3')">3</button></td>
+            <td rowspan="2"><button onclick="getanswer()" class="equal" onclick="getresult('=')">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button onclick="getresult('0')">0</button></td>
+        </tr>
+    </table>
+</body>
+<script src="./index.js"></script>
+</html>
